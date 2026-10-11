@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>تکون بده — آفلاین هستی</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #B8A1E3;
+        --color-primary-strong: #8E72C9;
+        --color-background: #FBF8FF;
+        --color-surface: #FFFFFF;
+        --color-text: #342B43;
+        --color-text-muted: #81758F;
+        --color-border: #E8DFF2;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'IRANSans', 'IRANSansX', 'IRAN Sans', system-ui, -apple-system, sans-serif;
+        background-color: var(--color-background);
+        color: var(--color-text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 24px;
+        text-align: center;
+      }
+      .card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 28px;
+        padding: 36px 24px;
+        max-width: 380px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(142, 114, 201, 0.08);
+      }
+      .mascot {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto 20px;
+      }
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: var(--color-text);
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+        margin-bottom: 24px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--color-primary-strong);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px 28px;
+        border-radius: 16px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+      }
+      .btn:active {
+        transform: scale(0.97);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="mascot">
+        <img src="/mascot-sleepy.svg" alt="تکونی خواب‌آلوده" width="130" height="130" />
+      </div>
+      <h1>اینترنت قطع شده، ولی عیب نداره!</h1>
+      <p>برنامه «تکون بده» حتی وقتی آفلاینی هم پیشت هست و تایمرهای داخلی‌ت کار می‌کنن. هر وقت وصل شدی صفحه رو رفرش کن.</p>
+      <button class="btn" onclick="window.location.reload()">تلاش دوباره</button>
+    </div>
+  </body>
+</html>

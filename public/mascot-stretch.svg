@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <!-- Soft ground shadow -->
+  <ellipse cx="100" cy="182" rx="38" ry="7" fill="#E8DFF2" />
+  
+  <!-- Little cute feet on tiptoes -->
+  <rect x="78" y="160" width="16" height="20" rx="8" fill="#8E72C9" />
+  <rect x="106" y="160" width="16" height="20" rx="8" fill="#8E72C9" />
+
+  <!-- Body (Stretched taller and happy) -->
+  <rect x="58" y="50" width="84" height="118" rx="42" fill="#B8A1E3" />
+
+  <!-- Belly highlight patch -->
+  <ellipse cx="100" cy="120" rx="27" ry="36" fill="#EDE5FA" />
+
+  <!-- Cute arms raised in high stretch -->
+  <path d="M62 90 C45 70 46 45 56 42 C64 40 70 54 74 72" fill="#8E72C9" />
+  <path d="M138 90 C155 70 154 45 144 42 C136 40 130 54 126 72" fill="#8E72C9" />
+
+  <!-- Little Head sprout -->
+  <path d="M100 50 C100 37 108 30 114 31 C118 32 117 41 104 44" stroke="#8E72C9" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <circle cx="115" cy="31" r="5" fill="#F6D6B8" />
+
+  <!-- Blushing cheeks -->
+  <ellipse cx="76" cy="94" rx="7" ry="4.5" fill="#F5C6D6" opacity="0.9" />
+  <ellipse cx="124" cy="94" rx="7" ry="4.5" fill="#F5C6D6" opacity="0.9" />
+
+  <!-- Happy closed arc eyes (^ ^) -->
+  <path d="M78 88 Q83 81 88 88" stroke="#342B43" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M112 88 Q117 81 122 88" stroke="#342B43" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Open cheerful joyful mouth -->
+  <path d="M93 96 Q100 106 107 96 Z" fill="#342B43" />
+  <path d="M96 99 Q100 104 104 99" fill="#F5C6D6" />
+
+  <!-- Stretch sparkle stars -->
+  <path d="M40 38 L43 45 L50 48 L43 51 L40 58 L37 51 L30 48 L37 45 Z" fill="#F6D6B8" />
+  <path d="M160 38 L163 45 L170 48 L163 51 L160 58 L157 51 L150 48 L157 45 Z" fill="#F6D6B8" />
+  <circle cx="48" cy="74" r="3" fill="#B9DDCA" />
+  <circle cx="152" cy="74" r="3" fill="#B9DDCA" />
+</svg>

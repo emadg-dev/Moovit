@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <!-- Walking dynamic ground shadow -->
+  <ellipse cx="104" cy="182" rx="44" ry="7" fill="#E8DFF2" />
+  
+  <!-- Walking feet: one forward, one back -->
+  <rect x="114" y="156" width="22" height="18" rx="9" fill="#8E72C9" transform="rotate(-12 125 165)" />
+  <rect x="68" y="160" width="20" height="18" rx="9" fill="#8E72C9" transform="rotate(18 78 169)" />
+
+  <!-- Body tilted slightly forward with cute momentum -->
+  <g transform="rotate(4 100 110)">
+    <rect x="56" y="55" width="88" height="112" rx="44" fill="#B8A1E3" />
+    <ellipse cx="102" cy="124" rx="29" ry="33" fill="#EDE5FA" />
+
+    <!-- Head sprout with trailing breeze bounce -->
+    <path d="M100 55 C98 42 105 34 112 36 C116 37 115 46 103 49" stroke="#8E72C9" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <circle cx="113" cy="36" r="5" fill="#F6D6B8" />
+
+    <!-- Cheerful swinging arms -->
+    <path d="M52 110 C42 118 42 134 54 136 C62 137 66 128 62 118" fill="#8E72C9" />
+    <path d="M142 102 C154 112 162 124 156 134 C150 140 142 132 138 120" fill="#8E72C9" />
+
+    <!-- Blushing cheeks -->
+    <ellipse cx="78" cy="98" rx="7" ry="4.5" fill="#F5C6D6" opacity="0.9" />
+    <ellipse cx="126" cy="98" rx="7" ry="4.5" fill="#F5C6D6" opacity="0.9" />
+
+    <!-- Determined and joyful eyes looking ahead -->
+    <circle cx="85" cy="90" r="5.5" fill="#342B43" />
+    <circle cx="87" cy="88" r="2" fill="#FFFFFF" />
+    <circle cx="121" cy="90" r="5.5" fill="#342B43" />
+    <circle cx="123" cy="88" r="2" fill="#FFFFFF" />
+
+    <!-- Happy forward smile -->
+    <path d="M96 100 Q104 106 112 100" stroke="#342B43" stroke-width="2.8" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Little motion dash lines behind -->
+  <line x1="42" y1="140" x2="52" y2="140" stroke="#B8A1E3" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+  <line x1="38" y1="150" x2="50" y2="150" stroke="#B8A1E3" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+</svg>

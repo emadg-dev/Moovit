@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('IRANSans-Light'), local('IRANSansX-Light'), local('IRANSans Light'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-sans-fonts@v1.0.0/dist/IRANSansWeb_Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IRANSans'), local('IRANSansX-Regular'), local('IRANSans Regular'), local('IRAN Sans'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-sans-fonts@v1.0.0/dist/IRANSansWeb.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('IRANSans-Medium'), local('IRANSansX-Medium'), local('IRANSans Medium'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-sans-fonts@v1.0.0/dist/IRANSansWeb_Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('IRANSans-Bold'), local('IRANSansX-Bold'), local('IRANSans Bold'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-sans-fonts@v1.0.0/dist/IRANSansWeb_Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #B8A1E3;
+  --color-primary-strong: #8E72C9;
+  --color-primary-soft: #EDE5FA;
+  --color-secondary: #F5C6D6;
+  --color-accent: #F6D6B8;
+  --color-background: #FBF8FF;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F5EFFC;
+  --color-text: #342B43;
+  --color-text-muted: #81758F;
+  --color-border: #E8DFF2;
+  --color-success: #B9DDCA;
+  --color-warning: #F4D8A5;
+  --color-error: #E7A6B0;
+}
+
+/* Dark mode theme: Deep midnight purple palette */
+html.dark, body.dark, .dark {
+  --color-primary: #CBB5F8;
+  --color-primary-strong: #A78BFA;
+  --color-primary-soft: #362854;
+  --color-secondary: #F2B8CD;
+  --color-accent: #F6D6B8;
+  --color-background: #130E20;
+  --color-surface: #1B142C;
+  --color-surface-soft: #241B3B;
+  --color-text: #F7F3FF;
+  --color-text-muted: #B9ACD4;
+  --color-border: #3D2E5C;
+  --color-success: #8CD3AA;
+  --color-warning: #F4CE88;
+  --color-error: #E7919E;
+}
+
+body {
+  font-family: 'IRANSans', 'IRANSansX', 'IRAN Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Dark mode utility overrides for smooth, coherent styling */
+.dark body,
+body.dark {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.dark .bg-white {
+  background-color: var(--color-surface) !important;
+}
+
+.dark .bg-\[\#FBF8FF\] {
+  background-color: var(--color-background) !important;
+}
+
+.dark .bg-\[\#F5EFFC\],
+.dark .bg-\[\#F5EFFC\]\/80 {
+  background-color: var(--color-surface-soft) !important;
+}
+
+.dark .bg-\[\#EDE5FA\],
+.dark .bg-\[\#EDE5FA\]\/60 {
+  background-color: var(--color-primary-soft) !important;
+  color: var(--color-primary) !important;
+}
+
+.dark .text-\[\#342B43\] {
+  color: var(--color-text) !important;
+}
+
+.dark .text-\[\#81758F\] {
+  color: var(--color-text-muted) !important;
+}
+
+.dark .border-\[\#E8DFF2\],
+.dark .border-\[\#E8DFF2\]\/80,
+.dark .border-\[\#E8DFF2\]\/70,
+.dark .border-\[\#E8DFF2\]\/60 {
+  border-color: var(--color-border) !important;
+}
+
+.dark .border-\[\#B8A1E3\],
+.dark .border-\[\#B8A1E3\]\/50 {
+  border-color: #5D478A !important;
+}
+
+.dark header {
+  background-color: rgba(19, 14, 32, 0.90) !important;
+  border-color: var(--color-border) !important;
+}
+
+.dark nav {
+  background-color: rgba(27, 20, 44, 0.95) !important;
+  border-color: var(--color-border) !important;
+}
+
+.dark input {
+  background-color: var(--color-surface-soft) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+.dark .bg-\[\#F6D6B8\]\/40,
+.dark .bg-\[\#F6D6B8\]\/50 {
+  background-color: rgba(246, 214, 184, 0.18) !important;
+}
+
+.dark .bg-\[\#F5C6D6\]\/30,
+.dark .bg-\[\#F5C6D6\]\/40,
+.dark .bg-\[\#F5C6D6\]\/50 {
+  background-color: rgba(245, 198, 214, 0.18) !important;
+}
+
+.dark .bg-\[\#B9DDCA\]\/30 {
+  background-color: rgba(185, 221, 202, 0.2) !important;
+}
+
+/* Mascot standout in dark mode: Radiant luminous lavender-purple aura */
+.dark img[src*="mascot"],
+.dark [role="img"][aria-label*="تکونی"] img {
+  filter: drop-shadow(0 6px 22px rgba(184, 161, 227, 0.48)) drop-shadow(0 0 12px rgba(167, 139, 250, 0.35));
+}
+
+/* Safe area support for iPhone notch and home indicator bar */
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 16px);
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+}
+
+.mb-safe {
+  margin-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+}
+
+/* Mascot floating and pulse keyframes */
+@keyframes mascot-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+@keyframes mascot-bounce-fun {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  60% {
+    transform: translateY(-2px) scale(0.98);
+  }
+}
+
+@keyframes mascot-stretch-arms {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.04) translateY(-3px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-mascot-float {
+  animation: mascot-float 3.5s ease-in-out infinite;
+}
+
+.animate-mascot-bounce {
+  animation: mascot-bounce-fun 1.8s ease-in-out infinite;
+}
+
+.animate-mascot-stretch {
+  animation: mascot-stretch-arms 2.4s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mascot-float,
+  .animate-mascot-bounce,
+  .animate-mascot-stretch,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+}

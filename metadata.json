@@ -1,0 +1,6 @@
+{
+  "name": "تکون بده",
+  "description": "اپلیکیشن پیش‌رونده (PWA) یادآور تحرک و استراحت پشت میز به زبان فارسی با تم بنفش پاستلی، کاراکتر بامزه و مدیریت اعلان‌ها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

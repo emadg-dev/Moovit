@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE5FA" />
+      <stop offset="100%" stop-color="#F5EFFC" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#8E72C9" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- App icon rounded background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  
+  <!-- Ground circle -->
+  <ellipse cx="256" cy="420" rx="130" ry="24" fill="#E8DFF2" />
+
+  <!-- Character container with drop shadow -->
+  <g filter="url(#shadow)">
+    <!-- Little feet -->
+    <rect x="200" y="380" width="42" height="42" rx="21" fill="#8E72C9" />
+    <rect x="270" y="380" width="42" height="42" rx="21" fill="#8E72C9" />
+
+    <!-- Body -->
+    <rect x="151" y="140" width="210" height="260" rx="105" fill="#B8A1E3" />
+    
+    <!-- Belly patch -->
+    <ellipse cx="256" cy="300" rx="72" ry="80" fill="#EDE5FA" />
+
+    <!-- Antenna -->
+    <path d="M256 140 C256 108 274 92 290 94 C300 96 298 116 268 124" stroke="#8E72C9" stroke-width="10" stroke-linecap="round" fill="none" />
+    <circle cx="292" cy="94" r="12" fill="#F6D6B8" />
+
+    <!-- Raised happy stretch arms -->
+    <path d="M160 220 C120 176 122 120 144 114 C162 110 178 142 188 180" fill="#8E72C9" />
+    <path d="M352 220 C392 176 390 120 368 114 C350 110 334 142 324 180" fill="#8E72C9" />
+
+    <!-- Blushing cheeks -->
+    <ellipse cx="200" cy="240" rx="18" ry="11" fill="#F5C6D6" />
+    <ellipse cx="312" cy="240" rx="18" ry="11" fill="#F5C6D6" />
+
+    <!-- Happy Eyes (^ ^) -->
+    <path d="M204 224 Q218 206 232 224" stroke="#342B43" stroke-width="8" stroke-linecap="round" fill="none" />
+    <path d="M280 224 Q294 206 308 224" stroke="#342B43" stroke-width="8" stroke-linecap="round" fill="none" />
+
+    <!-- Cheerful open mouth -->
+    <path d="M240 248 Q256 274 272 248 Z" fill="#342B43" />
+    <path d="M246 254 Q256 268 266 254" fill="#F5C6D6" />
+
+    <!-- Cute decorative star sparkles -->
+    <path d="M100 95 L106 108 L119 114 L106 120 L100 133 L94 120 L81 114 L94 108 Z" fill="#F6D6B8" />
+    <path d="M412 95 L418 108 L431 114 L418 120 L412 133 L406 120 L393 114 L406 108 Z" fill="#F6D6B8" />
+  </g>
+</svg>
